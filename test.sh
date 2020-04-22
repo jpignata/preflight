@@ -4,7 +4,7 @@ secret="AKIA$(seq -f "A" -s '' 16)"
 output=$(mkdir /tmp/gitsecretstest && \
   cd /tmp/gitsecretstest && \
   git init && \
-  echo $secret > secret.txt && \
+  echo "$secret" > secret.txt && \
   git add . && \
   git commit --allow-empty-message --no-edit 2>&1)
 
