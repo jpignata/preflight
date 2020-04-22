@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-secret="AKIA"
-secret="${secret}$(seq -f "A" -s '' 16)"
+secret="AKIA$(seq -f "A" -s '' 16)"
 output=$(mkdir /tmp/gitsecretstest && \
   cd /tmp/gitsecretstest && \
   git init && \
