@@ -17,7 +17,7 @@ for dir in $(find $HOME -type d -name '.git' 2>/dev/null);
 do
   echo "Installing git-secrets to $(dirname $dir)"
 
-$dir && \
+  cd $dir && \
     git secrets --install --force 1>/dev/null && \
     git secrets --register-aws
 done
