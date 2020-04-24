@@ -12,7 +12,7 @@ if [[ "$output" == *"ERROR"* ]]
 then
   echo -e "✅ [42;37;1m  git-secrets check passed!  [0m"
 else
-  echo -e "🚨 [41;37;1m  git-secrets passed failed! Please debug this immediately.  [0m"
+  echo -e "🚨 [41;37;1m  git-secrets check failed! Please debug this immediately.  [0m"
 fi
 
 rm -rf /tmp/gitsecretstest
