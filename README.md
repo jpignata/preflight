@@ -15,10 +15,11 @@ configured, and a script to do that configuration.
 
 2. Test that it's working properly by trying to commit a secret:
 
-  ```bash
-  ./test.sh
-  ````
+   ```bash
+   ./test.sh
+   ````
 
-The test creates a new repo and tries to commit a secret to it. git-secrets
-should stop this. If successfully stopped, the script will output a note saying
-everything is a-okay, otherwise a note that you need to debug your setup.
+   The test creates a new repo and tries to commit a secret to it. git-secrets
+   should stop this. If successfully stopped, the script will output a note
+   saying everything is a-okay, otherwise a note that you need to debug your
+   setup.
